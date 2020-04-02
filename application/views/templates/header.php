@@ -19,6 +19,9 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>/assets/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>/assets/slick/slick-theme.css" />
 
+    <!-- morris js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
     <title><?php echo $judul ?></title>
 </head>
 

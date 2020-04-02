@@ -7,12 +7,63 @@
  
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+    <?php
+
+    function http_request($url)
+    {
+        // persiapkan curl
+        $ch = curl_init();
+
+        // set url 
+        curl_setopt($ch, CURLOPT_URL, $url);
+
+        // set user agent    
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
+
+        // return the transfer as a string 
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+        // $output contains the output string 
+        $output = curl_exec($ch);
+
+        // tutup curl 
+        curl_close($ch);
+
+        // mengembalikan hasil curl
+        return $output;
+    }
+
+    $coronavirus_confirm = http_request("https://api.covid19api.com/country/indonesia/status/confirmed/live");
+    $coronavirus_deaths = http_request("https://api.covid19api.com/country/indonesia/status/deaths/live");
+    $coronavirus_recovered = http_request("https://api.covid19api.com/country/indonesia/status/recovered/live");
+
+    // ubah string JSON menjadi array
+    $coronavirus_confirm = json_decode($coronavirus_confirm, TRUE);
+    $coronavirus_deaths = json_decode($coronavirus_deaths, TRUE);
+    $coronavirus_recovered = json_decode($coronavirus_recovered, TRUE);
+    ?>
+    
+    <script>
+      Morris.Donut({
+        element: 'corona_diagram',
+        data: [
+          {label: "Confirmed Cases", value: <?php echo $coronavirus_confirm[count($coronavirus_confirm)-1]["Cases"] ?>},
+          {label: "Death Cases", value: <?php echo $coronavirus_deaths[count($coronavirus_deaths)-1]["Cases"] ?>},
+          {label: "Recovered Cases", value: <?php echo $coronavirus_recovered[count($coronavirus_recovered)-1]["Cases"] ?>}
+        ],
+        colors : ['#F50057', '#292D3E', '#8BC34A']
+      });
+    </script>
+
     <script>
         $(document).ready(function() {
             $('.slick-home').slick({
               autoplay : true,
               dots: true,
-              infinite: false,
+              infinite: true,
               speed: 300,
               slidesToShow: 3,
               slidesToScroll: 1,
