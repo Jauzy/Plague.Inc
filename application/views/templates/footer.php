@@ -50,9 +50,9 @@
       Morris.Donut({
         element: 'corona_diagram',
         data: [
-          {label: "Confirmed Cases", value: <?php echo $coronavirus_confirm[count($coronavirus_confirm)-1]["Cases"] ?>},
-          {label: "Death Cases", value: <?php echo $coronavirus_deaths[count($coronavirus_deaths)-1]["Cases"] ?>},
-          {label: "Recovered Cases", value: <?php echo $coronavirus_recovered[count($coronavirus_recovered)-1]["Cases"] ?>}
+          {label: "Confirmed", value: <?php echo $coronavirus_confirm[count($coronavirus_confirm)-1]["Cases"] ?>},
+          {label: "Deaths", value: <?php echo $coronavirus_deaths[count($coronavirus_deaths)-1]["Cases"] ?>},
+          {label: "Recovered", value: <?php echo $coronavirus_recovered[count($coronavirus_recovered)-1]["Cases"] ?>}
         ],
         colors : ['#F50057', '#292D3E', '#8BC34A']
       });

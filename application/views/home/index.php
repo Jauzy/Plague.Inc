@@ -64,13 +64,22 @@
             </div>
         </div>
 
-        <div class='container'>
-            <div class='row'>
-                <div class='col-md'>
-                    <div id="corona_diagram"></div>
-                </div>
-                <div class='col-md'>
-
+        <div class=''>
+            <div class='container py-5'>
+                <div class='row'>
+                    <div class='col-md d-flex'>
+                        <div class='m-auto'>
+                            <h1 class='text-right font-weight-bold text-main'>
+                                Keep Cautious and Updated About Corona Cases!
+                            </h1>
+                            <a class='text-decoration-none' to='#'>
+                                <h5 class='text-secondary text-right my-3'>Stay safe out there comrades <i class='fa fa-arrow-circle-right mr-2'></i></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class='col-md'>
+                        <div id="corona_diagram" class=''></div>
+                    </div>
                 </div>
             </div>
         </div>
