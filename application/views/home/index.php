@@ -64,7 +64,7 @@
             </div>
         </div>
 
-        <div class=''>
+        <div class='shape-wave-bottom' style="padding-bottom: 100px">
             <div class='container py-5'>
                 <div class='row'>
                     <div class='col-md d-flex'>
