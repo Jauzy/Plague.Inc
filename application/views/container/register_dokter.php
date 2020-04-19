@@ -7,7 +7,7 @@
                     <img src='./assets/img/undraw_doctors_hwty.svg' width='75%' class='m-auto' />
                 </div>
                 <div class='col-md-5'>
-                    <form class='d-flex flex-column' action="">
+                    <form class='d-flex flex-column' action="" method="post">
                         <div class='text-main'>
                             <h1 class='mt-5 font-weight-bold'>Register as Doctor</h1>
                             <h5 class='mb-4'>Please fill in form below with correct information.</h5>

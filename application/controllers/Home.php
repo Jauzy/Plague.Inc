@@ -6,9 +6,9 @@ class Home extends CI_Controller
 	{
 		ini_set('max_execution_time', 0);
 		ini_set('memory_limit', '2048M');
-		$data['judul'] = 'Home';
+		$data['judul'] = 'Plague.Inc - Home';
 		$this->load->view('templates/header', $data);
-		$this->load->view('home/index');
+		$this->load->view('container/home');
 		$this->load->view('templates/footer');
 	}
 }

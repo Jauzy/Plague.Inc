@@ -8,46 +8,39 @@
             <div class="col-md-5">
               <h6 class="font-weight-bolder text-white mb-2 mt-3 font-roboto">About Us</h6>
               <h4 class="font-weight-bolder">Plague.Inc</h4>
-              <p class="text-break">Passion. Sponsorship. Impact
-                We are a sponsorship platform focused on building an impactful way to strengthen
-                creators with meaningful connections that happen when creation meets the audience in
-                the form they are passionate about
+              <p class="text-break">Simple. Fast. Accurate.
+                We are a medical platform focused on building an impactful way to simplifying
+                hospital on managing administration of patients and doctors in medical scope. 
               </p>
             </div>
             <div class="col-md">
-              <h6 class="font-weight-bolder text-white mb-2 mt-3 font-roboto">Our Services</h6>
+              <h6 class="font-weight-bolder text-white mb-2 mt-3 font-roboto">Login User</h6>
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="text-decoration-none text-white" href=''>Discover Project</a>
+                  <a class="text-decoration-none text-white" href=''>Login as Waiter</a>
                 </li>
                 <li class="nav-item">
-                  <a class="text-decoration-none text-white" href=''>Create Project</a>
-                </li>
-                <li class="nav-item">
-                  <a class="text-decoration-none text-white">Pricing</a>
+                  <a class="text-decoration-none text-white" href=''>Login as Doctor</a>
                 </li>
               </ul>
             </div>
             <div class="col-md">
-              <h6 class="font-weight-bolder text-white mb-2 mt-3 font-roboto">Project Category</h6>
+              <h6 class="font-weight-bolder text-white mb-2 mt-3 font-roboto">Register User</h6>
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="text-decoration-none text-white">Discover Project</a>
+                  <a class="text-decoration-none text-white">Register as Waiter</a>
                 </li>
                 <li class="nav-item">
-                  <a class="text-decoration-none text-white">Create Project</a>
-                </li>
-                <li class="nav-item">
-                  <a class="text-decoration-none text-white">Pricing</a>
+                  <a class="text-decoration-none text-white">Register as Doctor</a>
                 </li>
               </ul>
             </div>
             <div class="col-md">
               <h6 class="font-weight-bolder text-white mb-2 mt-3 font-roboto">Connect with Us</h6>
               <ul class="navbar-nav">
-                <li class="nav-item">Contact Support : radi@sensis.id</li>
-                <li class="nav-item"><a href='https://twitter.com/Sensisid' class="text-decoration-none text-white">Twitter</a></li>
-                <li class="nav-item"><a href='https://www.instagram.com/sensis.id/' class="text-decoration-none text-white">Instagram</a></li>
+                <li class="nav-item">Mail : plague.inc@mail.com</li>
+                <li class="nav-item"><a href='#' class="text-decoration-none text-white">Twitter</a></li>
+                <li class="nav-item"><a href='#' class="text-decoration-none text-white">Instagram</a></li>
               </ul>
             </div>
           </div>

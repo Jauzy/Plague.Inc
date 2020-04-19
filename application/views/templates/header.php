@@ -44,6 +44,17 @@
                     <li class="nav-item mx-2">
                         <a class="btn btn-main-alt" href="<?= base_url(); ?>logindokter">Login</a>
                     </li>
+                    <li class="nav-item mx-2">
+                        <div class="dropdown">
+                            <button class="btn btn-main dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hello, User name
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Dashboard</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
