@@ -78,41 +78,41 @@
 
     <?php
 
-    function http_request($url)
-    {
-      // persiapkan curl
-      $ch = curl_init();
+    // function http_request($url)
+    // {
+    //   // persiapkan curl
+    //   $ch = curl_init();
 
-      // set url 
-      curl_setopt($ch, CURLOPT_URL, $url);
+    //   // set url 
+    //   curl_setopt($ch, CURLOPT_URL, $url);
 
-      // set user agent    
-      curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
+    //   // set user agent    
+    //   curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
 
-      // return the transfer as a string 
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    //   // return the transfer as a string 
+    //   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
-      // $output contains the output string 
-      $output = curl_exec($ch);
+    //   // $output contains the output string 
+    //   $output = curl_exec($ch);
 
-      // tutup curl 
-      curl_close($ch);
+    //   // tutup curl 
+    //   curl_close($ch);
 
-      // mengembalikan hasil curl
-      return $output;
-    }
+    //   // mengembalikan hasil curl
+    //   return $output;
+    // }
 
-    $coronavirus_confirm = http_request("https://api.covid19api.com/country/indonesia/status/confirmed/live");
-    $coronavirus_deaths = http_request("https://api.covid19api.com/country/indonesia/status/deaths/live");
-    $coronavirus_recovered = http_request("https://api.covid19api.com/country/indonesia/status/recovered/live");
+    // $coronavirus_confirm = http_request("https://api.covid19api.com/country/indonesia/status/confirmed/live");
+    // $coronavirus_deaths = http_request("https://api.covid19api.com/country/indonesia/status/deaths/live");
+    // $coronavirus_recovered = http_request("https://api.covid19api.com/country/indonesia/status/recovered/live");
 
-    // ubah string JSON menjadi array
-    $coronavirus_confirm = json_decode($coronavirus_confirm, TRUE);
-    $coronavirus_deaths = json_decode($coronavirus_deaths, TRUE);
-    $coronavirus_recovered = json_decode($coronavirus_recovered, TRUE);
-    ?>
+    // // ubah string JSON menjadi array
+    // $coronavirus_confirm = json_decode($coronavirus_confirm, TRUE);
+    // $coronavirus_deaths = json_decode($coronavirus_deaths, TRUE);
+    // $coronavirus_recovered = json_decode($coronavirus_recovered, TRUE);
+    // ?>
 
-    <script>
+    <!-- <script>
       Morris.Donut({
         element: 'corona_diagram',
         data: [{
@@ -131,7 +131,7 @@
         colors: ['#F50057', '#292D3E', '#A3F7BF']
       });
       $("div svg text").attr("style", "font-family: Roboto").attr("color","#523B5D");
-    </script>
+    </script> -->
 
     <script>
       $(document).ready(function() {

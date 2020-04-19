@@ -39,7 +39,7 @@
                         <a class="btn btn-main-alt" href="<?= base_url(); ?>about">About</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="btn btn-main-alt" href="<?= base_url(); ?>register">Register</a>
+                        <a class="btn btn-main-alt" href="<?= base_url(); ?>registerdokter">Register</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="btn btn-main-alt" href="<?= base_url(); ?>logindokter">Login</a>

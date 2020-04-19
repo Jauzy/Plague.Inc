@@ -77,9 +77,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class='col-md'>
+                    <!-- <div class='col-md'>
                         <div id="corona_diagram" class=''></div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

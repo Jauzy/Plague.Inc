@@ -1,5 +1,5 @@
 <div>
-    <div class='shape-wave-bottom' style=" padding-bottom: '200px'; padding-top: '50px' ">
+    <div class='shape-wave-bottom' style="padding-bottom: 200px;">
 
         <div class='container vh-100 d-flex'>
             <div class='row m-auto'>
@@ -7,13 +7,13 @@
                     <img src='./assets/img/undraw_doctors_hwty.svg' width='75%' class='m-auto' />
                 </div>
                 <div class='col-md-5'>
-                    <div class='d-flex flex-column'>
+                    <form class='d-flex flex-column' action="">
                         <div class='text-main'>
-                            <h1 class='mt-5 font-weight-bold'>Welcome Back :)</h1>
+                            <h1 class='mt-5 font-weight-bold'>Login as Waiter</h1>
                             <h5 class='mb-4'>Please login with your personal information by email address and password to continue</h5>
                             <div class="form-group">
                                 <label for="email">Email address</label>
-                                <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+                                <input placeholder="Ex: subarukyun@mail.com" type="email" class="form-control" name="email" aria-describedby="emailHelp">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
                             <div class="form-group mb-0">
@@ -22,13 +22,15 @@
                             </div>
                         </div>
                         <div class='d-flex'>
-                            <a class='text-decoration-none font-weight-bold my-3 font-size-14 text-main' href='<?php base_url()?>register'>Don't have an account ?</a>
+                            <a class='text-decoration-none font-weight-bold my-3 font-size-14 text-main' href='<?php base_url() ?>registerwaiter'>Don't have an account ?</a>
+                            <a class='text-decoration-none font-weight-bold my-3 font-size-14 text-main ml-auto' href='<?php base_url() ?>logindokter'>Not a waiter ? login as doctor.</a>
                         </div>
                         <div class='d-flex '>
-                            <div class='px-2 w-50'><a class='btn btn-main w-100 text-white' />Login</a>
+                            <div class='px-2 w-50'>
+                                <button class='btn btn-main w-100 text-white' type="submit"/>Login</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
